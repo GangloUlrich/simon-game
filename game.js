@@ -30,7 +30,7 @@ function nextSequence (){
     level++;
     $('level-title').text('Level' + level);
 
-    var randomNumber = Math.floor(math.random() * 4 );
+    var randomNumber = Math.floor(Math.random() * 4 );
     var randomChosenColor = buttonColour[randomNumber];
     gamepattern.push(randomChosenColor);
     $('#' + randomChosenColor).fadeIn(100).fadeOut(100).fadeIn(100);
